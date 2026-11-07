@@ -1,0 +1,29 @@
+newmtl Metal
+Kd 0.180 0.250 0.320
+Ks 0.6 0.6 0.6
+Ns 90
+
+newmtl Ceramic
+Kd 0.530 0.650 0.710
+Ks 0.6 0.6 0.6
+Ns 90
+
+newmtl Trim
+Kd 0.670 0.750 0.800
+Ks 0.6 0.6 0.6
+Ns 90
+
+newmtl Inset
+Kd 0.040 0.070 0.110
+Ks 0.6 0.6 0.6
+Ns 90
+
+newmtl Glow
+Kd 0.250 0.850 1.000
+Ks 0.6 0.6 0.6
+Ns 90
+
+newmtl Glass
+Kd 0.280 0.670 0.800
+Ks 0.6 0.6 0.6
+Ns 90

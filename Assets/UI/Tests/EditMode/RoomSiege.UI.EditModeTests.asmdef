@@ -1,0 +1,25 @@
+{
+  "name": "RoomSiege.UI.EditModeTests",
+  "references": [
+    "RoomSiege.UI",
+    "RoomSiege.Visuals",
+    "RoomSiege.Meta",
+    "RoomSiege.Scan",
+    "RoomSiege.Towers",
+    "RoomSiege.Waves",
+    "RoomSiege.Enemies",
+    "RoomSiege.Data",
+    "RoomSiege.Meta.Runtime",
+    "RoomSiege.Audio",
+    "ByteDance.PICO.XR.Spatializer",
+    "Unity.ugui",
+    "Unity.XR.Interaction.Toolkit",
+    "Unity.RenderPipelines.Universal.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

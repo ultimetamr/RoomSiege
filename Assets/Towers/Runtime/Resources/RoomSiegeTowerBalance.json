@@ -1,0 +1,1969 @@
+{
+  "schemaVersion": 1,
+  "economy": {
+    "sellRefundFraction": 0.7,
+    "interestRate": 0
+  },
+  "towers": [
+    {
+      "id": "MG",
+      "displayName": "MG机枪",
+      "buildCost": 50,
+      "damageMode": "projectile",
+      "rangeBand": "near",
+      "rangeMeters": {
+        "specified": true,
+        "value": 2
+      },
+      "singleUse": false,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 5,
+          "shotsPerSecond": 1.2,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 2,
+          "upgradeCost": 40,
+          "damagePerHit": 8,
+          "shotsPerSecond": 1.4,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 3,
+          "upgradeCost": 70,
+          "damagePerHit": 11,
+          "shotsPerSecond": 1.6,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": true,
+          "splashSize": "small",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.3
+          },
+          "splashDamage": {
+            "specified": true,
+            "value": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "Frost",
+      "displayName": "Frost冰墙",
+      "buildCost": 40,
+      "damageMode": "slowArea",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1
+      },
+      "singleUse": false,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.3,
+          "slowDurationSeconds": {
+            "specified": true,
+            "value": 2
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 2,
+          "upgradeCost": 35,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.45,
+          "slowDurationSeconds": {
+            "specified": true,
+            "value": 2
+          },
+          "rangeMultiplier": 1.3,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 3,
+          "upgradeCost": 60,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 1.5,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.55,
+          "slowDurationSeconds": {
+            "specified": true,
+            "value": 2
+          },
+          "rangeMultiplier": 1.3,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Laser",
+      "displayName": "Laser激光",
+      "buildCost": 80,
+      "damageMode": "beam",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 4
+      },
+      "singleUse": false,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 9,
+          "pierceTargetCount": 1,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 2,
+          "upgradeCost": 55,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 15,
+          "pierceTargetCount": 1,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 3,
+          "upgradeCost": 90,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 24,
+          "pierceTargetCount": 2,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Trap",
+      "displayName": "Trap陷阱",
+      "buildCost": 30,
+      "damageMode": "trap",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 0.5
+      },
+      "singleUse": true,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 350,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 2,
+          "upgradeCost": 20,
+          "damagePerHit": 450,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 3,
+          "upgradeCost": 45,
+          "damagePerHit": 600,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.3,
+          "slowDurationSeconds": {
+            "specified": true,
+            "value": 2
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "Tesla",
+      "displayName": "Tesla特斯拉",
+      "buildCost": 70,
+      "damageMode": "chain",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 2.2
+      },
+      "singleUse": false,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 7,
+          "shotsPerSecond": 0.8,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 3,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.8
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 2,
+          "upgradeCost": 45,
+          "damagePerHit": 11,
+          "shotsPerSecond": 0.9,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 4,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.8
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 3,
+          "upgradeCost": 80,
+          "damagePerHit": 16,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 5,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.8
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        }
+      ],
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0
+    },
+    {
+      "id": "Mortar",
+      "displayName": "Mortar迫击炮",
+      "buildCost": 90,
+      "damageMode": "mortar",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 3.6
+      },
+      "singleUse": false,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 24,
+          "shotsPerSecond": 0.35,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": true,
+          "splashSize": "area",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.65
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 2,
+          "upgradeCost": 55,
+          "damagePerHit": 38,
+          "shotsPerSecond": 0.4,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": true,
+          "splashSize": "area",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.75
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        },
+        {
+          "level": 3,
+          "upgradeCost": 90,
+          "damagePerHit": 58,
+          "shotsPerSecond": 0.45,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": true,
+          "splashSize": "area",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.85
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          }
+        }
+      ],
+      "minimumRangeMeters": 0.75,
+      "impactDelaySeconds": 0.7
+    },
+    {
+      "id": "Beacon",
+      "displayName": "战术信标",
+      "buildCost": 55,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.2
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.12,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 35,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.18,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 55,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.24,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Prism",
+      "displayName": "棱镜中继",
+      "buildCost": 50,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.2
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.1,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 30,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.15,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 50,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.2,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Cryo",
+      "displayName": "寒霜发生器",
+      "buildCost": 65,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.25
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.6666666666666666,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 1,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 45,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.8,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 1,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 70,
+          "damagePerHit": 0,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 2,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Sunder",
+      "displayName": "蚀甲投射器",
+      "buildCost": 60,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.4
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.5,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.2,
+          "effectDuration": 2.3
+        },
+        {
+          "level": 2,
+          "upgradeCost": 40,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.5,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.3,
+          "effectDuration": 2.3
+        },
+        {
+          "level": 3,
+          "upgradeCost": 65,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.5,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.4,
+          "effectDuration": 2.3
+        }
+      ]
+    },
+    {
+      "id": "Disruptor",
+      "displayName": "电磁压制器",
+      "buildCost": 75,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.4
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.3333333333333333,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.15,
+          "effectDuration": 1.2
+        },
+        {
+          "level": 2,
+          "upgradeCost": 50,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.4,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.2,
+          "effectDuration": 1.2
+        },
+        {
+          "level": 3,
+          "upgradeCost": 75,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0.5,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0.25,
+          "effectDuration": 1.2
+        }
+      ]
+    },
+    {
+      "id": "Gravity",
+      "displayName": "引力井",
+      "buildCost": 65,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.25
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.35,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 45,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.45,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 70,
+          "damagePerHit": 0,
+          "shotsPerSecond": 0,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0.55,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Sniper",
+      "displayName": "磁轨狙击",
+      "buildCost": 80,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 3.2
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 22,
+          "shotsPerSecond": 0.45,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 55,
+          "damagePerHit": 34,
+          "shotsPerSecond": 0.5,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 85,
+          "damagePerHit": 48,
+          "shotsPerSecond": 0.55,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Scatter",
+      "displayName": "蜂巢霰弹",
+      "buildCost": 65,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.3
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 7,
+          "shotsPerSecond": 0.8,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 40,
+          "damagePerHit": 11,
+          "shotsPerSecond": 0.9,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 65,
+          "damagePerHit": 16,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Flame",
+      "displayName": "熔流喷焰",
+      "buildCost": 70,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 1.35
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 0,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 4,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 3,
+          "effectDuration": 1.2
+        },
+        {
+          "level": 2,
+          "upgradeCost": 45,
+          "damagePerHit": 0,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 6,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 4.5,
+          "effectDuration": 1.2
+        },
+        {
+          "level": 3,
+          "upgradeCost": 75,
+          "damagePerHit": 0,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 9,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 6,
+          "effectDuration": 1.2
+        }
+      ]
+    },
+    {
+      "id": "Missile",
+      "displayName": "追踪导弹",
+      "buildCost": 90,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 2.8
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0.65,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 24,
+          "shotsPerSecond": 0.55,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.45
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 60,
+          "damagePerHit": 36,
+          "shotsPerSecond": 0.6,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.55
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 95,
+          "damagePerHit": 52,
+          "shotsPerSecond": 0.65,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": true,
+            "value": 0.65
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Railgun",
+      "displayName": "贯星轨道炮",
+      "buildCost": 100,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 3.4
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 18,
+          "shotsPerSecond": 0.5,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 3,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 65,
+          "damagePerHit": 28,
+          "shotsPerSecond": 0.55,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 4,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 100,
+          "damagePerHit": 40,
+          "shotsPerSecond": 0.6,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 5,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        }
+      ]
+    },
+    {
+      "id": "Blade",
+      "displayName": "环刃哨卫",
+      "buildCost": 60,
+      "damageMode": "arsenal",
+      "rangeBand": "unspecified",
+      "rangeMeters": {
+        "specified": true,
+        "value": 0.9
+      },
+      "singleUse": false,
+      "minimumRangeMeters": 0,
+      "impactDelaySeconds": 0,
+      "levels": [
+        {
+          "level": 1,
+          "upgradeCost": 0,
+          "damagePerHit": 6,
+          "shotsPerSecond": 1,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 2,
+          "upgradeCost": 40,
+          "damagePerHit": 10,
+          "shotsPerSecond": 1.1,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        },
+        {
+          "level": 3,
+          "upgradeCost": 65,
+          "damagePerHit": 14,
+          "shotsPerSecond": 1.2,
+          "damagePerSecond": 0,
+          "pierceTargetCount": 0,
+          "slowFraction": 0,
+          "slowDurationSeconds": {
+            "specified": false,
+            "value": 0
+          },
+          "rangeMultiplier": 1,
+          "splashEnabled": false,
+          "splashSize": "",
+          "splashRadiusMeters": {
+            "specified": false,
+            "value": 0
+          },
+          "splashDamage": {
+            "specified": false,
+            "value": 0
+          },
+          "effectMagnitude": 0,
+          "effectDuration": 0
+        }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "Grunt",
+      "hitPoints": 24,
+      "moveSpeed": 0.5,
+      "killGold": 6,
+      "leakDamage": 1,
+      "movementPattern": "straight",
+      "hasShield": false,
+      "shieldHitPoints": {
+        "specified": false,
+        "value": 0
+      },
+      "summon": {
+        "enabled": false,
+        "enemyId": "",
+        "periodic": false,
+        "intervalSeconds": {
+          "specified": false,
+          "value": 0
+        },
+        "countPerSummon": {
+          "specified": false,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "Runner",
+      "hitPoints": 15,
+      "moveSpeed": 1,
+      "killGold": 8,
+      "leakDamage": 1,
+      "movementPattern": "serpentine",
+      "hasShield": false,
+      "shieldHitPoints": {
+        "specified": false,
+        "value": 0
+      },
+      "summon": {
+        "enabled": false,
+        "enemyId": "",
+        "periodic": false,
+        "intervalSeconds": {
+          "specified": false,
+          "value": 0
+        },
+        "countPerSummon": {
+          "specified": false,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "Tank",
+      "hitPoints": 120,
+      "moveSpeed": 0.3,
+      "killGold": 25,
+      "leakDamage": 3,
+      "movementPattern": "straight",
+      "hasShield": false,
+      "shieldHitPoints": {
+        "specified": false,
+        "value": 0
+      },
+      "summon": {
+        "enabled": false,
+        "enemyId": "",
+        "periodic": false,
+        "intervalSeconds": {
+          "specified": false,
+          "value": 0
+        },
+        "countPerSummon": {
+          "specified": false,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "Shielded",
+      "hitPoints": 36,
+      "moveSpeed": 0.45,
+      "killGold": 12,
+      "leakDamage": 2,
+      "movementPattern": "straight",
+      "hasShield": true,
+      "shieldHitPoints": {
+        "specified": true,
+        "value": 18
+      },
+      "summon": {
+        "enabled": false,
+        "enemyId": "",
+        "periodic": false,
+        "intervalSeconds": {
+          "specified": false,
+          "value": 0
+        },
+        "countPerSummon": {
+          "specified": false,
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "Boss",
+      "hitPoints": 600,
+      "moveSpeed": 0.25,
+      "killGold": 150,
+      "leakDamage": 5,
+      "movementPattern": "straight",
+      "hasShield": false,
+      "shieldHitPoints": {
+        "specified": false,
+        "value": 0
+      },
+      "summon": {
+        "enabled": true,
+        "enemyId": "Grunt",
+        "periodic": true,
+        "initialDelaySeconds": {
+          "specified": true,
+          "value": 5
+        },
+        "intervalSeconds": {
+          "specified": true,
+          "value": 7.5
+        },
+        "countPerSummon": {
+          "specified": true,
+          "value": 2
+        }
+      }
+    }
+  ],
+  "waves": [
+    {
+      "number": 1,
+      "groups": [
+        {
+          "enemyId": "Grunt",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "groups": [
+        {
+          "enemyId": "Grunt",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "groups": [
+        {
+          "enemyId": "Grunt",
+          "count": 6
+        },
+        {
+          "enemyId": "Runner",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "groups": [
+        {
+          "enemyId": "Runner",
+          "count": 5
+        },
+        {
+          "enemyId": "Grunt",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "groups": [
+        {
+          "enemyId": "Tank",
+          "count": 1
+        },
+        {
+          "enemyId": "Grunt",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "groups": [
+        {
+          "enemyId": "Shielded",
+          "count": 4
+        },
+        {
+          "enemyId": "Runner",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "groups": [
+        {
+          "enemyId": "Grunt",
+          "count": 10
+        },
+        {
+          "enemyId": "Runner",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "groups": [
+        {
+          "enemyId": "Tank",
+          "count": 2
+        },
+        {
+          "enemyId": "Shielded",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "groups": [
+        {
+          "enemyId": "Runner",
+          "count": 8
+        },
+        {
+          "enemyId": "Shielded",
+          "count": 4
+        },
+        {
+          "enemyId": "Grunt",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "groups": [
+        {
+          "enemyId": "Boss",
+          "count": 1
+        },
+        {
+          "enemyId": "Grunt",
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "difficulties": [
+    {
+      "id": "Casual",
+      "displayName": "休闲",
+      "hpMultiplier": 1,
+      "initialGold": 180,
+      "speedMultiplier": 0.9,
+      "leakMultiplier": 0.5
+    },
+    {
+      "id": "Standard",
+      "displayName": "标准",
+      "hpMultiplier": 1.3,
+      "initialGold": 150,
+      "speedMultiplier": 1,
+      "leakMultiplier": 1
+    },
+    {
+      "id": "Hardcore",
+      "displayName": "硬核",
+      "hpMultiplier": 1.7,
+      "initialGold": 120,
+      "speedMultiplier": 1.15,
+      "leakMultiplier": 1.5
+    }
+  ],
+  "enemyProgression": {
+    "spawnIntervalSeconds": 1,
+    "hpIncreasePerWave": 0.35,
+    "speedIncreasePerWave": 0.015,
+    "maximumWave": 10,
+    "armorIncreasePerWave": 10,
+    "earlyWaveCount": 3,
+    "earlyWaveHpMultiplier": 0.6,
+    "earlyWaveSpeedMultiplier": 0.7,
+    "waveOverrides": [
+      {
+        "wave": 1,
+        "statWave": 2,
+        "hpMultiplier": 1.0
+      },
+      {
+        "wave": 2,
+        "statWave": 2,
+        "hpMultiplier": 1.1
+      }
+    ]
+  }
+}

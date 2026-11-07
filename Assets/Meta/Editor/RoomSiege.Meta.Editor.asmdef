@@ -1,0 +1,1 @@
+{"name":"RoomSiege.Meta.Editor","references":["RoomSiege.Meta","RoomSiege.Meta.Runtime","Unity.RenderPipelines.Universal.Runtime"],"includePlatforms":["Editor"]}

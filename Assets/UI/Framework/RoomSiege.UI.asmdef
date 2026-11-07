@@ -1,0 +1,4 @@
+{
+  "name": "RoomSiege.UI",
+  "references": ["RoomSiege.Meta", "RoomSiege.Visuals", "RoomSiege.Scan", "Unity.ugui", "Unity.InputSystem", "Unity.XR.Interaction.Toolkit", "Unity.XR.OpenXR"]
+}

@@ -1,0 +1,1 @@
+{"name":"RoomSiege.Towers.EditModeTests","references":["RoomSiege.Towers","RoomSiege.Data","RoomSiege.Scan","RoomSiege.Meta"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"]}

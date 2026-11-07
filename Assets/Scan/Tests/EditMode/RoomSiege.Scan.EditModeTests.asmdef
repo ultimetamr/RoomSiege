@@ -1,0 +1,6 @@
+{
+  "name":"RoomSiege.Scan.EditModeTests",
+  "references":["RoomSiege.Scan"],
+  "includePlatforms":["Editor"],
+  "optionalUnityReferences":["TestAssemblies"]
+}

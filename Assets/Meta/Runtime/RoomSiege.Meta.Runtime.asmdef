@@ -1,0 +1,17 @@
+{
+  "name": "RoomSiege.Meta.Runtime",
+  "references": [
+    "RoomSiege.Visuals",
+    "RoomSiege.Meta",
+    "RoomSiege.Data",
+    "RoomSiege.Waves",
+    "RoomSiege.Enemies",
+    "RoomSiege.Towers",
+    "RoomSiege.UI",
+    "RoomSiege.Audio",
+    "Unity.ugui",
+    "Unity.XR.Interaction.Toolkit",
+    "RoomSiege.Scan",
+    "Unity.RenderPipelines.Universal.Runtime"
+  ]
+}

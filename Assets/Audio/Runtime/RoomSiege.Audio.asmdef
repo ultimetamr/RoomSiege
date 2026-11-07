@@ -1,0 +1,15 @@
+{
+  "name": "RoomSiege.Audio",
+  "references": [
+    "RoomSiege.Visuals",
+    "RoomSiege.Data",
+    "RoomSiege.Enemies",
+    "RoomSiege.Meta",
+    "RoomSiege.Scan",
+    "RoomSiege.Towers",
+    "RoomSiege.UI",
+    "RoomSiege.Waves",
+    "ByteDance.PICO.XR.Spatializer",
+    "Unity.ugui"
+  ]
+}

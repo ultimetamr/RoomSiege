@@ -1,0 +1,7 @@
+{
+  "name": "RoomSiege.Data.EditModeTests",
+  "rootNamespace": "RoomSiege.Data.Tests",
+  "references": ["RoomSiege.Data"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

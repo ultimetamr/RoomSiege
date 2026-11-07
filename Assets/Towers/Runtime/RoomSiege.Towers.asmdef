@@ -1,0 +1,1 @@
+{"name":"RoomSiege.Towers","references":["RoomSiege.Visuals","RoomSiege.Data","RoomSiege.Scan","RoomSiege.UI","RoomSiege.Meta","Unity.ugui","Unity.InputSystem","Unity.XR.Interaction.Toolkit","Unity.XR.OpenXR"]}

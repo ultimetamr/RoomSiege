@@ -1,0 +1,5 @@
+{
+  "name": "RoomSiege.UI.Editor",
+  "references": ["RoomSiege.UI"],
+  "includePlatforms": ["Editor"]
+}

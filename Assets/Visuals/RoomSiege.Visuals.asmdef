@@ -1,0 +1,5 @@
+{
+  "name": "RoomSiege.Visuals",
+  "rootNamespace": "RoomSiege.Visuals",
+  "references": ["Unity.ugui"]
+}

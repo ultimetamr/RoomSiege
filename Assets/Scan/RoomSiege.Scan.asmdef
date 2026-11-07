@@ -1,0 +1,5 @@
+{
+  "name": "RoomSiege.Scan",
+  "rootNamespace": "RoomSiege.Scan",
+  "references": ["RoomSiege.Visuals", "ByteDance.PICO.XR", "Unity.InputSystem", "Unity.XR.OpenXR", "Unity.XR.CoreUtils", "Unity.ugui", "Unity.XR.Interaction.Toolkit"]
+}

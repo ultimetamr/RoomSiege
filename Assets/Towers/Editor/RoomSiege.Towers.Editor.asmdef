@@ -1,0 +1,1 @@
+{"name":"RoomSiege.Towers.Editor","references":["RoomSiege.Towers","Unity.XR.OpenXR","ByteDance.PICO.XR","ByteDance.PICO.XR.Editor"],"includePlatforms":["Editor"]}

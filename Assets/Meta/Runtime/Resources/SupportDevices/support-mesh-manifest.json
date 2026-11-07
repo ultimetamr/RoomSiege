@@ -1,0 +1,167 @@
+[
+  {
+    "id": "freeze",
+    "vertices": 7340,
+    "triangles": 3708,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "emp",
+    "vertices": 16616,
+    "triangles": 8328,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "overload",
+    "vertices": 6240,
+    "triangles": 3164,
+    "materials": [
+      "Ceramic",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "decoy",
+    "vertices": 7670,
+    "triangles": 3862,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "repair",
+    "vertices": 6792,
+    "triangles": 3436,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "strike",
+    "vertices": 8272,
+    "triangles": 4156,
+    "materials": [
+      "Ceramic",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "firefield",
+    "vertices": 8464,
+    "triangles": 4320,
+    "materials": [
+      "Ceramic",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "gravity",
+    "vertices": 9048,
+    "triangles": 4552,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "mine",
+    "vertices": 7208,
+    "triangles": 3660,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "thunder",
+    "vertices": 9484,
+    "triangles": 4776,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "corrosion",
+    "vertices": 8480,
+    "triangles": 4280,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  },
+  {
+    "id": "frostsigil",
+    "vertices": 6860,
+    "triangles": 3468,
+    "materials": [
+      "Ceramic",
+      "Glass",
+      "Glow",
+      "Inset",
+      "Metal",
+      "Trim"
+    ],
+    "origin": "Original mesh authoring; no AI generation service output"
+  }
+]

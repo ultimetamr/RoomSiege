@@ -1,0 +1,18 @@
+{
+  "authorship": "Original mesh authoring; no external 3D service",
+  "units": "metres",
+  "parts": [
+    {
+      "part": "GuardianChassis",
+      "triangles": 4380
+    },
+    {
+      "part": "GuardianHeart",
+      "triangles": 216
+    },
+    {
+      "part": "GuardianOrbit",
+      "triangles": 4848
+    }
+  ]
+}

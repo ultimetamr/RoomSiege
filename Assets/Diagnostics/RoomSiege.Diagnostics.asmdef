@@ -1,0 +1,4 @@
+{
+  "name": "RoomSiege.Diagnostics",
+  "references": ["RoomSiege.Meta", "RoomSiege.Data", "RoomSiege.Towers", "RoomSiege.Enemies", "RoomSiege.Waves", "RoomSiege.Scan", "RoomSiege.UI"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "RoomSiege.Waves",
+  "references": [
+    "RoomSiege.Visuals",
+    "RoomSiege.Data",
+    "RoomSiege.Meta",
+    "RoomSiege.Scan",
+    "RoomSiege.Towers",
+    "RoomSiege.Enemies",
+    "RoomSiege.UI",
+    "Unity.ugui"
+  ]
+}
