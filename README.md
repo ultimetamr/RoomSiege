@@ -23,7 +23,7 @@ RoomSiege 是基于 Unity 与 PICO OpenXR 的 MR 空间塔防游戏。在真实�
 - Unity：**6000.6.8f1**，Android / ARM64 / IL2CPP / OpenGLES3。
 - PICO Unity Integration SDK：**6.1.1**，OpenXR **1.18.0**。
 
-这是可继续开发的完整游戏工程，不代表所有设备场景均已验证。Unity 6 的编辑器编译与主菜单运行检查通过；最新真机启动检查中，房间查询曾返回 0 个锚点并进入沙盘，**真实房间自动恢复仍需排查**。运行效果以真机为准；宣传图为概念画面。
+这是可继续开发的完整游戏工程，不代表所有设备场景均已验证。Unity 6 的编辑器编译与主菜单运行检查通过。针对真机启动时房间查询返回 0 个锚点的问题，源码已加入定位就绪等待、服务重连和后台恢复处理，扫描模块 52 项 EditMode 测试通过；**本次恢复修复尚待真机复测**。运行效果以真机为准；宣传图为概念画面。
 
 ## 获取并打开
 
@@ -74,7 +74,7 @@ Docs/            构建说明、版本说明、作品介绍与宣传素材
 
 Unity 菜单 **RoomSiege → Build Android APK**，输出 `Builds/RoomSiege.apk`。图标导出钩子同时设置普通与自适应图标，避免回退为 Unity 默认图标。
 
-EditMode 测试位于各模块的 `Tests/EditMode` 以及 `Assets/UI/Tests/EditMode`。通过 **Window → General → Test Runner → EditMode** 运行。仓库包含测试源文件；本次源码发布没有重新执行完整测试或重新构建 APK，历史检查范围见 [Unity 6 兼容记录](Docs/Unity6Compatibility-2026-11-06.md)。
+EditMode 测试位于各模块的 `Tests/EditMode` 以及 `Assets/UI/Tests/EditMode`。通过 **Window → General → Test Runner → EditMode** 运行。2026-11-07 房间恢复修复通过扫描模块 52 项测试与 Android 脚本编译，并已生成测试 APK；本次未重新运行全工程测试，真机复测待完成。历史检查范围见 [Unity 6 兼容记录](Docs/Unity6Compatibility-2026-11-06.md)。
 
 ## 第三方依赖与公开范围
 
@@ -86,5 +86,5 @@ EditMode 测试位于各模块的 `Tests/EditMode` 以及 `Assets/UI/Tests/EditM
 
 - [版本说明](CHANGELOG.md)
 - [可直接用于作品提交的中文介绍](Docs/Submission.zh-CN.md)
-- [作品图标](Docs/Media/RoomSiege-Icon.png)
+- [作品图标（1024×1024 PNG）](Docs/Media/RoomSiege-Icon-1024.png)
 - [宣传海报](Docs/Media/RoomSiege-Poster.png)

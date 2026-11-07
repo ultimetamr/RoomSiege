@@ -20,6 +20,7 @@ namespace RoomSiege.Scan
     {
         public bool TryEnablePassthrough()=>SetPassthrough(true);
         private readonly RoomScanQueue queue = new RoomScanQueue();
+        private int providerRevision=-1;
         public Task<RoomSnapshot> ScanAsync(Transform trackingSpace, CancellationToken token, Action<string> progress,bool requestCapture=false)
         {
             return queue.Run(()=>ReadRoom(trackingSpace, token, progress,requestCapture),token);
@@ -38,7 +39,8 @@ namespace RoomSiege.Scan
                 throw new NotSupportedException("运行时缺少 Scene Capture 或 Passthrough 扩展。");
             progress("请在设备上处理空间数据权限；系统确认由你选择。");
             await EnsureSpatialPermission(token);
-            await EnsureProvider(token);
+            progress("正在等待头显回到应用并稳定定位…");
+            await EnsureLocatedProvider(token);
             // An explicit button press means rescan even when stale or incomplete
             // anchors exist. Startup/background reads never open a system page.
             if(requestCapture)
@@ -47,8 +49,7 @@ namespace RoomSiege.Scan
                 Require(await PXR_MixedReality.StartSceneCaptureAsync(token),"系统房间扫描");
                 token.ThrowIfCancellationRequested();
                 progress("系统扫描已返回，正在恢复房间定位…");
-                await Task.Delay(500,token);
-                await EnsureProvider(token);
+                await EnsureLocatedProvider(token,true);
             }
             RoomSnapshot room=null;
             var anchors = new List<(ulong handle, string id, PxrSemanticLabel label, Vector3 p, Quaternion r)>();
@@ -58,7 +59,34 @@ namespace RoomSiege.Scan
             for(int attempt=0;attempt<8;attempt++)
             {
                 progress($"正在定位房间地板… 重试 {attempt+1} 次");
-                var query=await PXR_MixedReality.QuerySceneAnchorAsync(token);
+                var query=await RoomAnchorRecovery.ReadAsync(
+                    t=>EnsureLocatedProvider(t),
+                    async t=>
+                    {
+                        int queryRevision=RoomTrackingReady.Revision;
+                        var snapshot=await PXR_MixedReality.QuerySceneAnchorAsync(t);
+                        t.ThrowIfCancellationRequested();
+                        // A successful native query spanning suspension may contain
+                        // stale handles; discard it and reconnect on the next read.
+                        if(queryRevision!=RoomTrackingReady.Revision)
+                            return (result:PxrResult.SUCCESS,anchorDictionary:new Dictionary<ulong,Guid>());
+                        if(snapshot.result==PxrResult.ERROR_SESSION_NOT_RUNNING||
+                           snapshot.result==PxrResult.ERROR_SESSION_NOT_READY||
+                           snapshot.result==PxrResult.ERROR_FILE_ACCESS_ERROR)
+                        {
+                            Debug.LogWarning("[RoomSiege.Scan] Transient room read failure: "+snapshot.result);
+                            return (result:PxrResult.SUCCESS,anchorDictionary:new Dictionary<ulong,Guid>());
+                        }
+                        Require(snapshot.result,"读取房间锚点");
+                        return snapshot;
+                    },
+                    snapshot=>snapshot.anchorDictionary==null||snapshot.anchorDictionary.Count==0,
+                    async t=>
+                    {
+                        progress("房间锚点暂未就绪，正在重连空间数据服务…");
+                        Debug.LogWarning("[RoomSiege.Scan] Empty anchor snapshots; restarting Scene Capture provider once.");
+                        await EnsureLocatedProvider(t,true);
+                    },t=>Task.Delay(500,t),token);
                 token.ThrowIfCancellationRequested();Require(query.result,"读取房间锚点");
                 room=new RoomSnapshot();anchors.Clear();
                 int floors=0,missingPose=0,missingPolygon=0,rejected=0;
@@ -162,6 +190,28 @@ namespace RoomSiege.Scan
             if(result==PxrResult.SUCCESS&&state==PxrSenseDataProviderState.Running)return;
             Require(await PXR_MixedReality.StartSenseDataProvider(PxrSenseDataProviderType.SceneCapture,token),"启动 Scene Capture");
             token.ThrowIfCancellationRequested();
+        }
+        private async Task EnsureLocatedProvider(CancellationToken token,bool reconnect=false)
+        {
+            while(true)
+            {
+                await RoomTrackingReady.Wait(token);
+                int current=RoomTrackingReady.Revision;
+                if(reconnect||(providerRevision>=0&&providerRevision!=current))await RestartProvider(token);
+                else await EnsureProvider(token);
+                providerRevision=current;
+                if(current==RoomTrackingReady.Revision)return;
+                reconnect=true;
+            }
+        }
+        private static async Task RestartProvider(CancellationToken token)
+        {
+            token.ThrowIfCancellationRequested();
+            Require(PXR_MixedReality.GetSenseDataProviderState(PxrSenseDataProviderType.SceneCapture,out var state),"读取房间服务状态");
+            if(state==PxrSenseDataProviderState.Running)
+                Require(PXR_MixedReality.StopSenseDataProvider(PxrSenseDataProviderType.SceneCapture),"停止旧房间服务");
+            await RoomTrackingReady.Wait(token);
+            await EnsureProvider(token);
         }
         private static void Require(PxrResult result,string stage)
         { if(result!=PxrResult.SUCCESS) throw new InvalidOperationException(stage+"失败："+result); }

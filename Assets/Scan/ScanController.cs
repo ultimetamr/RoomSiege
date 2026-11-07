@@ -199,6 +199,7 @@ namespace RoomSiege.Scan
                 if(this!=null && request==revision)
                 {
                     cancellation.Cancel();
+                    roomDirty=false;
                     ActivateSandbox("真实扫描不可用 → 沙盘："+error.Message);
                 }
             }
@@ -384,6 +385,14 @@ namespace RoomSiege.Scan
                 if(keys.gKey.wasPressedThisFrame) ToggleOverlay();
                 if(keys.cKey.wasPressedThisFrame) CalibrateEntrance();
             }
+            if(roomDirty&&!BattleLayoutLocked&&!IsScanning&&RequestedMode==ScanMode.RealRoom&&
+                CurrentGrid!=null&&CurrentGrid.Mode==ScanMode.Sandbox&&Time.unscaledTime>=nextRefresh)
+            {
+                // The native room can finish loading after the startup timeout.
+                // A new data event gets another automatic read before building.
+                roomDirty=false;nextRefresh=Time.unscaledTime+5f;
+                ReadExistingRoom();return;
+            }
             if(CurrentRoom==null || CurrentGrid==null || IsScanning || head==null) return;
             if(CoreFollowsPlayer&&Time.unscaledTime>=nextCoreFollow)
             {nextCoreFollow=Time.unscaledTime+.1f;TryFollowPlayer(head.transform.position);}
@@ -398,14 +407,18 @@ namespace RoomSiege.Scan
         {
             var request=revision;
             refreshing=true;
+            // A refresh owns its timeout. Cancelling it must not poison all
+            // later scans or leave an orphan query holding the provider queue.
+            using var refreshCancellation=CancellationTokenSource.CreateLinkedTokenSource(cancellation.Token);
             try
             {
-                var token=cancellation.Token;
+                var token=refreshCancellation.Token;
                 var operation=scanner.ScanAsync(head.transform.parent,token,_=>{});
                 if(await Task.WhenAny(operation,Task.Delay(TimeSpan.FromSeconds(15),token))!=operation)
                 {
+                    refreshCancellation.Cancel();
                     _=ObserveLate(operation);
-                    token.ThrowIfCancellationRequested();
+                    cancellation.Token.ThrowIfCancellationRequested();
                     throw new TimeoutException("锚点更新超时");
                 }
                 var updated=await operation;
@@ -419,7 +432,16 @@ namespace RoomSiege.Scan
                 else ActivateSandbox("房间更新后"+failure+" → 模拟沙盘");
             }
             catch(Exception error)
-            { if(this!=null && request==revision&&!BattleLayoutLocked) { cancellation.Cancel(); ActivateSandbox("锚点更新失败 → 沙盘："+error.Message); } }
+            {
+                if(this!=null && request==revision&&!BattleLayoutLocked)
+                {
+                    // Keep the last located room during a transient permission /
+                    // focus interruption. The next refresh retries real data.
+                    nextRefresh=Time.unscaledTime+5f;
+                    SetStatus("房间定位暂未更新，正在等待追踪恢复");
+                    Debug.LogWarning("[RoomSiege.Scan] Room refresh deferred: "+error.Message);
+                }
+            }
             finally { if(this!=null && request==revision) refreshing=false; }
         }
 
