@@ -51,6 +51,8 @@ RoomSiege 是基于 Unity 与 PICO OpenXR 的 MR 空间塔防游戏。在真实�
 
 详细环境与故障处理：[构建指南](Docs/BUILDING.md)。
 
+**Vibe Lab GitHub 云打包**使用单独的 [RoomSiege-VibeLab](https://github.com/ultimetamr/RoomSiege-VibeLab) Android Gradle 提交工程。本仓库是 Unity 源码，不能直接在根目录运行 `gradle assembleRelease`。更新流程见 [云打包指南](Docs/VibeLab-Cloud-Build.md)。
+
 ## 工程结构
 
 ```text
